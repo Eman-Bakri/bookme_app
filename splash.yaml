@@ -1,13 +1,13 @@
 flutter_native_splash:
   color: "#FFFFFF"
   color_dark: "#272727"
-  image: assets/logos/logo_black2.png
-  image_dark: assets/logos/logo_white2.png
+  image: assets/logos/nobg_blacklogo.png
+  image_dark: assets/logos/nobg_whitelogo.png
 
   android_12:
     color: "#FFFFFF"
     color_dark: "#272727"
-    image: assets/logos/logo_black2.png
-    image_dark: assets/logos/logo_white2.png
+    image: assets/logos/nobg_blacklogo.png
+    image_dark: assets/logos/nobg_whitelogo.png
 
   web: false
