@@ -1,3 +1,4 @@
+import 'package:bookme_app/features/authentication/screens/signup.dart';
 import 'package:bookme_app/utils/constants/colors.dart';
 import 'package:bookme_app/utils/constants/image_strings.dart';
 import 'package:bookme_app/utils/constants/sizes.dart';
@@ -100,7 +101,7 @@ class LoginScreen extends StatelessWidget {
                     SizedBox(
                         width: double.infinity,
                         child: OutlinedButton(
-                            onPressed: () {},
+                            onPressed: () => Get.to(() => const SignupScreen()),
                             child: const Text(BMTextStrings.createAccount))),
                   ],
                 ),

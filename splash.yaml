@@ -1,13 +1,13 @@
 flutter_native_splash:
   color: "#FFFFFF"
   color_dark: "#272727"
-  image: assets/logos/nobg_blacklogo.png
-  image_dark: assets/logos/nobg_whitelogo.png
+  image: assets/logos/Bookme_logosmall.png
+  image_dark: assets/logos/Bookme_logosmall.png
 
   android_12:
     color: "#FFFFFF"
     color_dark: "#272727"
-    image: assets/logos/nobg_blacklogo.png
-    image_dark: assets/logos/nobg_whitelogo.png
+    image: assets/logos/Bookme_logosmall.png
+    image_dark: assets/logos/Bookme_logosmall.png
 
   web: false

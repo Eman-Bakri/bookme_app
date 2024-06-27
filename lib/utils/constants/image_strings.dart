@@ -1,12 +1,12 @@
 class BMImages {
 
   /// -- APP logos
-  static const String darkAppLogo = "assets/logos/nobg_whitelogo.png";
-  static const String lightAppLogo = "assets/logos/nobg_blacklogo.png";
+  static const String darkAppLogo = "assets/logos/Bookme_newlogo_nobg.png";
+  static const String lightAppLogo = "assets/logos/Bookme_newlogo_nobg.png";
 
   /// -- Social media logos
-  static const String google = "assets/logos/google-icon.png";
-  static const String facebook = "assets/logos/facebook-icon.png";
+  static const String google = "assets/icons/google-icon.png";
+  static const String facebook = "assets/icons/facebook-icon.png";
 
 
   /// -- OnBoarding gifs
