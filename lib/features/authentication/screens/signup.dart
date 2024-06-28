@@ -1,3 +1,4 @@
+import 'package:bookme_app/features/authentication/screens/verify_email.dart';
 import 'package:bookme_app/utils/constants/colors.dart';
 import 'package:bookme_app/utils/constants/image_strings.dart';
 import 'package:bookme_app/utils/constants/sizes.dart';
@@ -62,6 +63,7 @@ class SignupScreen extends StatelessWidget {
                         labelText: BMTextStrings.username,
                         prefixIcon: Icon(Iconsax.user_edit)),
                   ),
+                  const SizedBox(height: BMSizes.spaceBtwInputFields),
 
                   /// -- Email
                   TextFormField(
@@ -104,13 +106,25 @@ class SignupScreen extends StatelessWidget {
                           TextSpan(
                               text: '${BMTextStrings.iAgreeTo} ',
                               style: Theme.of(context).textTheme.bodySmall),
-                          TextSpan(text: BMTextStrings.privacyPolicy, style: Theme.of(context).textTheme.bodyMedium!.apply(
-                            color: dark ? BMColors.white : BMColors.primaryColor,
-                          )),
-                          TextSpan(text: '${BMTextStrings.and} ', style: Theme.of(context).textTheme.bodySmall),
-                          TextSpan(text: BMTextStrings.termsOfUse, style: Theme.of(context).textTheme.bodyMedium!.apply(
-                            color: dark ? BMColors.white : BMColors.primaryColor,
-                          )),
+                          TextSpan(
+                              text: BMTextStrings.privacyPolicy,
+                              style:
+                                  Theme.of(context).textTheme.bodyMedium!.apply(
+                                        color: dark
+                                            ? BMColors.white
+                                            : BMColors.primaryColor,
+                                      )),
+                          TextSpan(
+                              text: '${BMTextStrings.and} ',
+                              style: Theme.of(context).textTheme.bodySmall),
+                          TextSpan(
+                              text: BMTextStrings.termsOfUse,
+                              style:
+                                  Theme.of(context).textTheme.bodyMedium!.apply(
+                                        color: dark
+                                            ? BMColors.white
+                                            : BMColors.primaryColor,
+                                      )),
                         ],
                       ))
                     ],
@@ -118,30 +132,49 @@ class SignupScreen extends StatelessWidget {
                   const SizedBox(height: BMSizes.spaceBtwSections),
 
                   /// -- Sign up Button
-                   SizedBox(width: double.infinity, child: ElevatedButton(onPressed: (){}, child: const Text(BMTextStrings.createAccount),),),
+                  SizedBox(
+                    width: double.infinity,
+                    child: ElevatedButton(
+                      onPressed: () => Get.to(() => const VerifyEmailScreen()),
+                      child: const Text(BMTextStrings.createAccount),
+                    ),
+                  ),
                 ],
               )),
               const SizedBox(height: BMSizes.spaceBtwSections),
+
               /// -- Divider
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   Flexible(
-                    child: (Divider(color: dark ? BMColors.darkGrey : BMColors.grey, thickness: 0.5, indent: 60, endIndent: 5)),
+                    child: (Divider(
+                        color: dark ? BMColors.darkGrey : BMColors.grey,
+                        thickness: 0.5,
+                        indent: 60,
+                        endIndent: 5)),
                   ),
-                  Text(BMTextStrings.orSignUpWith.capitalize!, style: Theme.of(context).textTheme.labelMedium),
+                  Text(BMTextStrings.orSignUpWith.capitalize!,
+                      style: Theme.of(context).textTheme.labelMedium),
                   Flexible(
-                    child: (Divider(color: dark ? BMColors.darkGrey : BMColors.grey, thickness: 0.5, indent: 5, endIndent: 60)),
+                    child: (Divider(
+                        color: dark ? BMColors.darkGrey : BMColors.grey,
+                        thickness: 0.5,
+                        indent: 5,
+                        endIndent: 60)),
                   ),
                 ],
               ),
               const SizedBox(height: BMSizes.spaceBtwSections),
+
               /// -- Social media footer
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   Container(
-                    decoration: BoxDecoration(border: Border.all(color: BMColors.grey), borderRadius: BorderRadius.circular(100)),
+                    decoration: BoxDecoration(
+                        border: Border.all(color: BMColors.grey),
+                        borderRadius: BorderRadius.circular(100)),
                     child: IconButton(
                       onPressed: () {},
                       icon: const Image(
@@ -152,7 +185,9 @@ class SignupScreen extends StatelessWidget {
                   ),
                   const SizedBox(width: BMSizes.spaceBtwItems),
                   Container(
-                    decoration: BoxDecoration(border: Border.all(color: BMColors.grey), borderRadius: BorderRadius.circular(100)),
+                    decoration: BoxDecoration(
+                        border: Border.all(color: BMColors.grey),
+                        borderRadius: BorderRadius.circular(100)),
                     child: IconButton(
                       onPressed: () {},
                       icon: const Image(

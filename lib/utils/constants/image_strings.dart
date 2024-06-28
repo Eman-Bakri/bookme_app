@@ -14,4 +14,8 @@ class BMImages {
   static const String onBoardingImg2 = "assets/images/onboarding/loveRead.gif";
   static const String onBoardingImg3 = "assets/images/onboarding/GrowthBook.gif";
 
+  /// -- verify email gifs
+  static const String verifyImg1 = "assets/images/email.gif";
+  static const String verifyImg2 = "assets/images/mail-success.gif";
+
 }
