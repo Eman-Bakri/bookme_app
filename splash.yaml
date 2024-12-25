@@ -1,13 +1,13 @@
 flutter_native_splash:
   color: "#FFFFFF"
   color_dark: "#272727"
-  image: assets/logos/Bookme_splash.png
-  image_dark: assets/logos/Bookme_splash.png
+  image: assets/logos/10002.png
+  image_dark: assets/logos/10002.png
 
   android_12:
     color: "#FFFFFF"
     color_dark: "#272727"
-    image: assets/logos/Bookme_splash.png
-    image_dark: assets/logos/Bookme_splash.png
+    image: assets/logos/10002.png
+    image_dark: assets/logos/10002.png
 
   web: false
