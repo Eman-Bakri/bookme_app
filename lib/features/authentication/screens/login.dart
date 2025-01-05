@@ -1,5 +1,6 @@
 import 'package:bookme_app/features/authentication/screens/password_forget.dart';
 import 'package:bookme_app/features/authentication/screens/signup.dart';
+import 'package:bookme_app/nav_bar.dart';
 import 'package:bookme_app/utils/constants/colors.dart';
 import 'package:bookme_app/utils/constants/image_strings.dart';
 import 'package:bookme_app/utils/constants/sizes.dart';
@@ -94,7 +95,7 @@ class LoginScreen extends StatelessWidget {
                     SizedBox(
                         width: double.infinity,
                         child: ElevatedButton(
-                            onPressed: () {},
+                            onPressed: () => Get.to(() => const NavigationMenu()),
                             child: const Text(BMTextStrings.signIn))),
                     const SizedBox(height: BMSizes.spaceBtwItems),
 
