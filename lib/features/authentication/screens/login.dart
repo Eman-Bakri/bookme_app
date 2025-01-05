@@ -1,3 +1,4 @@
+import 'package:bookme_app/features/authentication/screens/password_forget.dart';
 import 'package:bookme_app/features/authentication/screens/signup.dart';
 import 'package:bookme_app/utils/constants/colors.dart';
 import 'package:bookme_app/utils/constants/image_strings.dart';
@@ -83,7 +84,7 @@ class LoginScreen extends StatelessWidget {
 
                         /// -- forget pass
                         TextButton(
-                            onPressed: () {},
+                            onPressed: () => Get.to(() => const PasswordForget()),
                             child: const Text(BMTextStrings.forgetPassword)),
                       ],
                     ),
