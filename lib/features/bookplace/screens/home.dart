@@ -1,7 +1,8 @@
+import 'package:bookme_app/common/widgets/appbar.dart';
 import 'package:bookme_app/utils/constants/colors.dart';
+import 'package:bookme_app/utils/constants/texts_strings.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:bookme_app/utils/theme/theme.dart';
 import 'package:flutter/widgets.dart';
 import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
@@ -16,6 +17,7 @@ class HomeScreen extends StatelessWidget {
       body: SingleChildScrollView(
         child: Column(
           children: [
+            /// header details
             ClipPath(
               clipper: BMCustomCurvedEdges(),
               child: Container(
@@ -27,17 +29,42 @@ class HomeScreen extends StatelessWidget {
                     Positioned(top: 100, right: -300, child: BMCircularWidget(backgroundColor: BMColors.textWhite.withOpacity(0.1))),
                     Column(
                       children: [
-
+                        BMAppBar(title: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Text(BMTextStrings.homeAppBarTitle, style: Theme.of(context).textTheme.labelMedium!.apply(color: BMColors.grey),),
+                            Text(BMTextStrings.homeAppBarSubTitle, style: Theme.of(context).textTheme.headlineSmall!.apply(color: BMColors.white),),
+                          ],
+                        ),
+                          actions: [
+                            Stack(children: [
+                              IconButton(onPressed: (){}, icon: const Icon(Iconsax.book, color: BMColors.white)),
+                              Positioned(
+                                right: 0,
+                                child: Container(
+                                  width:18,
+                                  height: 18,
+                                  decoration: BoxDecoration(
+                                    color: BMColors.black,
+                                    borderRadius: BorderRadius.circular(100),
+                                  ),
+                                  child: Center(
+                                    child: Text('2', style: Theme.of(context).textTheme.labelLarge!.apply(color: BMColors.white, fontSizeFactor: 0.8),),
+                                  ),
+                                ),
+                              ),
+                            ],
+                        ),
                       ],
                     ),
                   ],
                 ),
-              ),
+              ],
             ),
-          ],
+              ),
         ),
-      ),
-    );
+  ],
+    )));
   }
 }
 
@@ -45,11 +72,11 @@ class BMCircularWidget extends StatelessWidget {
   const BMCircularWidget({
     super.key,
     this.child,
-    this.width = 400,
-    this.height = 400,
+    this.width = 200,
+    this.height = 200,
     this.backgroundColor = BMColors.white,
     this.padding = 0,
-    this.radius = 400,
+    this.radius = 200,
   });
 
   final Widget? child;
@@ -58,7 +85,7 @@ class BMCircularWidget extends StatelessWidget {
   final double? width;
   final double? height;
   final Color backgroundColor;
-  
+
   @override
   Widget build(BuildContext context) {
     return Container(

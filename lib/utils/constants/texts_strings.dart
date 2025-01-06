@@ -58,6 +58,7 @@ class BMTextStrings {
 
   /// -- Home texts
   static const String homeAppBarTitle = "Bookish friend";
+  static const String homeAppBarSubTitle = "Leyla Ali";
   static const String facebook = "Eman Bakri";
 
 }
