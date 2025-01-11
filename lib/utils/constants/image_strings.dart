@@ -18,4 +18,12 @@ class BMImages {
   static const String verifyImg1 = "assets/images/email.gif";
   static const String verifyImg2 = "assets/images/mail-success.gif";
 
+  /// -- Books Categories
+  static const String rom = "assets/icons/balloons.png";
+  static const String history = "assets/icons/hieroglyph.png";
+  static const String tech = "assets/icons/robotic-hand.png";
+  static const String sci = "assets/icons/science.png";
+  static const String fic = "assets/icons/science-fiction.png";
+  static const String lit = "assets/icons/poetry.png";
+
 }

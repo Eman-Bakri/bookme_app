@@ -1,11 +1,8 @@
 import 'package:bookme_app/features/authentication/screens/password_reset.dart';
 import 'package:bookme_app/utils/constants/sizes.dart';
 import 'package:bookme_app/utils/constants/texts_strings.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/painting.dart';
 import 'package:get/get.dart';
-import 'package:get/get_core/src/get_main.dart';
 import 'package:iconsax/iconsax.dart';
 
 class PasswordForget extends StatelessWidget {

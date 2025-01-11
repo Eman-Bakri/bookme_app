@@ -1,5 +1,6 @@
 
 /// -- List of Enums
+library;
 
 enum TextSizes { small, medium, large }
 

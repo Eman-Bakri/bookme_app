@@ -6,7 +6,6 @@ import 'package:bookme_app/utils/constants/image_strings.dart';
 import 'package:bookme_app/utils/constants/sizes.dart';
 import 'package:bookme_app/utils/constants/texts_strings.dart';
 import 'package:bookme_app/utils/helpers/helper_functions.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';

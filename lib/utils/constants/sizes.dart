@@ -1,14 +1,13 @@
-import 'package:flutter/material.dart';
 
 class BMSizes {
   BMSizes._();
 
   /// -- Padding & Margins
   static const double xs = 4.0;
-  static const double sm = 4.0;
-  static const double md = 4.0;
-  static const double lg = 4.0;
-  static const double xl = 4.0;
+  static const double sm = 8.0;
+  static const double md = 16.0;
+  static const double lg = 24.0;
+  static const double xl = 32.0;
 
   /// -- Font Sizes
   static const double fsSm = 14.0;

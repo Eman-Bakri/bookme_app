@@ -1,5 +1,4 @@
 import 'package:get_storage/get_storage.dart';
-import 'package:logger/logger.dart';
 
 class BMLocalStorage {
   static final BMLocalStorage _instance = BMLocalStorage._internal();
