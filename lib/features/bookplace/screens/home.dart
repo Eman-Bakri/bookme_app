@@ -141,6 +141,17 @@ class HomeScreen extends StatelessWidget {
             ),
           ),
         ),
+
+        /// -- Body of Home Page
+        /// -- Banner Section
+        Padding(
+          padding: const EdgeInsets.all(BMSizes.defaultSpace),
+          child: Container(
+            decoration: BoxDecoration(
+              borderRadius: BorderRadius.circular(BMSizes.md)),
+              child: ClipRRect(borderRadius: BorderRadius.circular(BMSizes.md) ,child: const Image(image: AssetImage(BMImages.sectionBanner), fit: BoxFit.contain,)),
+            ),
+        ),
       ],
     )));
   }

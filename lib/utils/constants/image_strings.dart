@@ -26,4 +26,7 @@ class BMImages {
   static const String fic = "assets/icons/science-fiction.png";
   static const String lit = "assets/icons/poetry.png";
 
+  /// -- section Banner
+  static const String sectionBanner = "assets/images/section.jpg";
+
 }
