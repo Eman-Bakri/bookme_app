@@ -1,4 +1,5 @@
 import 'package:bookme_app/common/widgets/appbar.dart';
+import 'package:bookme_app/common/widgets/book_card.dart';
 import 'package:bookme_app/utils/constants/colors.dart';
 import 'package:bookme_app/utils/constants/image_strings.dart';
 import 'package:bookme_app/utils/constants/sizes.dart';
@@ -9,6 +10,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
+import 'package:bookme_app/common/widgets/bmgridLayout.dart';
 
 ///------ Home Screen of the App
 class HomeScreen extends StatelessWidget {
@@ -146,16 +148,25 @@ class HomeScreen extends StatelessWidget {
         /// -- Banner Section
         Padding(
           padding: const EdgeInsets.all(BMSizes.defaultSpace),
-          child: Container(
-            decoration: BoxDecoration(
-              borderRadius: BorderRadius.circular(BMSizes.md)),
-              child: ClipRRect(borderRadius: BorderRadius.circular(BMSizes.md) ,child: const Image(image: AssetImage(BMImages.sectionBanner), fit: BoxFit.contain,)),
-            ),
+          child: Column(
+            children: [
+              Container(
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(BMSizes.md)),
+                  child: ClipRRect(borderRadius: BorderRadius.circular(BMSizes.md) ,child: const Image(image: AssetImage(BMImages.sectionBanner), fit: BoxFit.contain,)),
+                ),
+              const SizedBox(height: BMSizes.spaceBtwSections),
+              /// --- books GridView
+              BMGridLayout(itemCount: 4, itemBuilder: (_, index) => const BMBookCard())
+            ],
+          ),
         ),
       ],
     )));
   }
 }
+
+
 
 class BMCategorySlider extends StatelessWidget {
   const BMCategorySlider({
