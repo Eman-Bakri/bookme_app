@@ -6,9 +6,7 @@ import 'package:bookme_app/utils/constants/sizes.dart';
 import 'package:bookme_app/utils/constants/texts_strings.dart';
 import 'package:bookme_app/utils/device/device_utility.dart';
 import 'package:bookme_app/utils/helpers/helper_functions.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
 import 'package:bookme_app/common/widgets/bmgridLayout.dart';
 
@@ -165,8 +163,6 @@ class HomeScreen extends StatelessWidget {
     )));
   }
 }
-
-
 
 class BMCategorySlider extends StatelessWidget {
   const BMCategorySlider({

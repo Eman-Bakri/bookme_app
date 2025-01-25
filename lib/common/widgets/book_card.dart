@@ -1,14 +1,10 @@
-import 'dart:ui';
 
 import 'package:bookme_app/common/styles/shadows.dart';
 import 'package:bookme_app/utils/constants/colors.dart';
 import 'package:bookme_app/utils/constants/image_strings.dart';
 import 'package:bookme_app/utils/constants/sizes.dart';
 import 'package:bookme_app/utils/helpers/helper_functions.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/painting.dart';
-import 'package:flutter/widgets.dart';
 import 'package:iconsax/iconsax.dart';
 
 ///------ setup the vertical cards

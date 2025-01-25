@@ -8,6 +8,9 @@ class BMImages {
   static const String google = "assets/icons/google-icon.png";
   static const String facebook = "assets/icons/facebook-icon.png";
 
+  /// -- Profile Pics
+  static const String userM = "assets/images/User/man.png";
+  static const String userW = "assets/images/User/woman.png";
 
   /// -- OnBoarding gifs
   static const String onBoardingImg1 = "assets/images/onboarding/BookGlasses.gif";

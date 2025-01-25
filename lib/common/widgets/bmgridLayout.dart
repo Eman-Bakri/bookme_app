@@ -1,4 +1,3 @@
-import 'package:bookme_app/common/widgets/book_card.dart';
 import 'package:bookme_app/utils/constants/sizes.dart';
 import 'package:flutter/cupertino.dart';
 
