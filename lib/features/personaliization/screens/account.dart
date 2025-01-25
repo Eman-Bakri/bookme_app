@@ -1,10 +1,11 @@
 import 'package:bookme_app/common/widgets/appbar.dart';
 import 'package:bookme_app/features/bookplace/screens/home.dart';
+import 'package:bookme_app/features/personaliization/screens/profile.dart';
 import 'package:bookme_app/utils/constants/colors.dart';
 import 'package:bookme_app/utils/constants/image_strings.dart';
 import 'package:bookme_app/utils/constants/sizes.dart';
-import 'package:bookme_app/utils/helpers/helper_functions.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
 
 ///------ setup the account settings
@@ -48,7 +49,7 @@ class AccountScreen extends StatelessWidget {
                     ),
 
                     /// -- Profile
-                    const BMUserProfile(),
+                     BMUserProfile(onPressed: () => Get.to(() => const ProfileScreen())),
                     const SizedBox(height: BMSizes.spaceBtwSections),
                   ],
                 )
@@ -114,8 +115,10 @@ class BMSettingsMenuItem extends StatelessWidget {
 
 class BMUserProfile extends StatelessWidget {
   const BMUserProfile({
-    super.key,
+    super.key, required this.onPressed,
   });
+
+  final VoidCallback onPressed;
 
   @override
   Widget build(BuildContext context) {
@@ -141,7 +144,7 @@ class BMUserProfile extends StatelessWidget {
             .apply(color: BMColors.white),
       ),
       trailing: IconButton(
-        onPressed: () {},
+        onPressed: onPressed,
         icon: const Icon(
           Iconsax.edit,
           color: BMColors.white,
