@@ -170,7 +170,7 @@ class BMCategorySlider extends StatelessWidget {
     required this.image,
     required this.title,
     this.textColor = BMColors.white,
-    this.backgroundColor = BMColors.white,
+    this.backgroundColor,
     this.onTap,
   });
 

@@ -1,3 +1,4 @@
+import 'package:bookme_app/features/bookplace/screens/favorite.dart';
 import 'package:bookme_app/features/bookplace/screens/home.dart';
 import 'package:bookme_app/features/personaliization/screens/account.dart';
 import 'package:bookme_app/utils/constants/colors.dart';
@@ -39,6 +40,6 @@ class NavigationMenu extends StatelessWidget {
 class NavigationController extends GetxController{
   final Rx<int> selectedIndex = 0.obs;
 
-  final screens = [const HomeScreen() ,Container(color: Colors.purple),const AccountScreen()];
+  final screens = [const HomeScreen() , const FavoriteScreen(), const AccountScreen()];
 
 }
