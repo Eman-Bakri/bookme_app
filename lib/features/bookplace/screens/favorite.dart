@@ -2,7 +2,6 @@ import 'package:bookme_app/common/widgets/appbar.dart';
 import 'package:bookme_app/common/widgets/bmgridLayout.dart';
 import 'package:bookme_app/common/widgets/book_card.dart';
 import 'package:bookme_app/features/bookplace/screens/home.dart';
-import 'package:bookme_app/utils/constants/image_strings.dart';
 import 'package:bookme_app/utils/constants/sizes.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';

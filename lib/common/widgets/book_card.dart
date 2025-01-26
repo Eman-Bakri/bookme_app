@@ -1,10 +1,13 @@
 
 import 'package:bookme_app/common/styles/shadows.dart';
+import 'package:bookme_app/features/bookplace/screens/bookdetails.dart';
 import 'package:bookme_app/utils/constants/colors.dart';
 import 'package:bookme_app/utils/constants/image_strings.dart';
 import 'package:bookme_app/utils/constants/sizes.dart';
 import 'package:bookme_app/utils/helpers/helper_functions.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import 'package:get/get_core/src/get_main.dart';
 import 'package:iconsax/iconsax.dart';
 
 ///------ setup the vertical cards
@@ -14,7 +17,7 @@ class BMBookCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
-      onTap: (){},
+      onTap: () => Get.to( () => const BookDetails()),
       child: Container(
         width: 180,
         padding: const EdgeInsets.all(1),
