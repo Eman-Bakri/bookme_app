@@ -50,6 +50,7 @@ dependencies:
 
   # Product Specific
   readmore: ^2.2.0
+  firebase_core: ^3.4.0
 
 
 
