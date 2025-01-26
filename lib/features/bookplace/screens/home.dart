@@ -1,12 +1,16 @@
 import 'package:bookme_app/common/widgets/appbar.dart';
 import 'package:bookme_app/common/widgets/book_card.dart';
+///import 'package:bookme_app/features/bookplace/controllers/categorycontroller.dart';
 import 'package:bookme_app/utils/constants/colors.dart';
 import 'package:bookme_app/utils/constants/image_strings.dart';
 import 'package:bookme_app/utils/constants/sizes.dart';
 import 'package:bookme_app/utils/constants/texts_strings.dart';
 import 'package:bookme_app/utils/device/device_utility.dart';
 import 'package:bookme_app/utils/helpers/helper_functions.dart';
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import 'package:get/get_core/src/get_main.dart';
 import 'package:iconsax/iconsax.dart';
 import 'package:bookme_app/common/widgets/bmgridLayout.dart';
 
@@ -16,6 +20,7 @@ class HomeScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+   /// final categoryController = Get.put(CategoryController());
     return Scaffold(
         body: SingleChildScrollView(
             child: Column(
@@ -119,18 +124,18 @@ class HomeScreen extends StatelessWidget {
                             const SizedBox(height: BMSizes.spaceBtwItems),
 
                             /// categories
-                            SizedBox(
-                              height: 80,
-                              child: ListView.builder(
-                                shrinkWrap: true,
-                                itemCount: 6,
-                                scrollDirection: Axis.horizontal,
-                                itemBuilder: (_, index) {
-                                  return BMCategorySlider(image: BMImages.fic, title: 'Fiction', onTap: (){});
-                                  return null;
-                                },
-                              ),
-                            )
+                        SizedBox(
+                          height: 80,
+                          child: ListView.builder(
+                            shrinkWrap: true,
+                            itemCount: 6,
+                            scrollDirection: Axis.horizontal,
+                            itemBuilder: (_, index) {
+                              return BMCategorySlider(image: BMImages.fic, title: 'Fiction', onTap: (){});
+                              return null;
+                            },
+                          ),
+                        )
                           ],
                         ),
                       )

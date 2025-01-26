@@ -9,8 +9,6 @@ import 'app.dart';
 Future<void> main() async {
 
 // Todo: Initialize Firebase
-  await Firebase.initializeApp(
-    options: DefaultFirebaseOptions.currentPlatform).then(
-          (FirebaseApp value) => Get.put/*AuthenticationRepository()*/);
+
   runApp(const MyApp());
 }
